@@ -11,11 +11,7 @@ for food in root:
         price = food.find('price').text
         description = food.find('description').text
         calories = food.find('calories').text
-
-
         
-                
-
         if int(calories) > 700:
                 t.rows.append([name, price, description, calories])
 
@@ -25,11 +21,8 @@ for food in root:
                                HTML.TableCell(description, bgcolor='red'),
                                HTML.TableCell(calories, bgcolor='red')])
 
-
 html_code = str(t)
 
 html_file= open("test.html", "w")
 html_file.write(html_code)
 html_file.close()
-
-	
