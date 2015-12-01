@@ -15,9 +15,6 @@ for food in root:
         if int(calories) > 700:
                 t.rows.append([name, price, description, calories])
 
-        if int(calories) > 700:
-                t.rows.append([name, price, description, calories])
-
         if float(price[1:]) > 8:
                 for x in t.rows:
                         t.rows.remove(x)
